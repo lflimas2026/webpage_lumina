@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Venda mais, reduza faltas e recupere pacientes com IA</title>
+    <meta name="description" content="A plataforma completa para clínicas de estética que desejam crescer, reter pacientes inativos e automatizar a recepção usando Inteligência Artificial.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Lumina</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#problemas" class="nav-link">Desafios</a>
+                <a href="#solucoes" class="nav-link">Soluções</a>
+                <a href="#inteligencia-artificial" class="nav-link">Inteligência Artificial</a>
+                <a href="#beneficios" class="nav-link">Resultados</a>
+                <a href="#precos" class="nav-link">Planos</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#precos" class="btn btn-primary btn-sm">Começar teste grátis</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badges">
+                        <span class="badge badge-rating">
+                            <i data-lucide="star" class="icon-star"></i> ⭐ 4.9/5 estrelas de satisfação
+                        </span>
+                        <span class="badge badge-social">
+                            <i data-lucide="users"></i> Já utilizada por +150 clínicas em todo o Brasil
+                        </span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        A plataforma que ajuda sua clínica a <span class="highlight">vender mais</span> e <span class="highlight">perder menos</span> pacientes.
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Automatize sua agenda, recupere pacientes inativos, acompanhe o financeiro em tempo real e utilize inteligência artificial para aumentar seu faturamento.
+                    </p>
+                    
+                    <div class="hero-actions-container">
+                        <div class="hero-actions">
+                            <a href="#precos" class="btn btn-primary btn-lg">Começar teste grátis</a>
+                            <a href="#solucoes" class="btn btn-secondary btn-lg">Ver demonstração</a>
+                        </div>
+                        
+                        <div class="hero-seals-list">
+                            <div class="h-seal-item">
+                                <i data-lucide="check-circle" class="icon-success"></i>
+                                <span>✓ 30 dias grátis</span>
+                            </div>
+                            <div class="h-seal-item">
+                                <i data-lucide="shield-check" class="icon-success"></i>
+                                <span>✓ Sem cartão de crédito</span>
+                            </div>
+                            <div class="h-seal-item">
+                                <i data-lucide="zap" class="icon-accent"></i>
+                                <span>✓ Cancelamento a qualquer momento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/hero_dashboard.png" alt="Dashboard de Crescimento Lumina" class="hero-img">
+                        <div class="floating-badge badge-1">
+                            <i data-lucide="users" class="icon-success"></i>
+                            <div>
+                                <span class="fb-title">Recuperação de Clientes</span>
+                                <span class="fb-value">+42% de retorno</span>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i data-lucide="trending-up" class="icon-accent"></i>
+                            <div>
+                                <span class="fb-title">Faturamento Mensal</span>
+                                <span class="fb-value">+35% de crescimento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Background Glows -->
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </section>
+
+        <!-- Pain / Problema Section -->
+        <section class="pain-section" id="problemas">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline tag-danger">Os Gargalos de Faturamento</span>
+                    <h2 class="section-title">Quanto custa ignorar as falhas invisíveis da sua clínica?</h2>
+                    <p class="section-subtitle">Gerenciar processos de forma manual e fragmentada drena seus lucros e afasta seus pacientes. Você se reconhece em alguma destas situações?</p>
+                </div>
+                
+                <div class="pain-grid">
+                    <!-- Card 1 -->
+                    <div class="pain-card">
+                        <div class="pain-icon-wrapper">
+                            <span class="emoji-icon">📉</span>
+                        </div>
+                        <h3 class="pain-card-title">Pacientes que não retornam</h3>
+                        <p class="pain-card-description">Eles fazem um procedimento e nunca mais voltam. Sem um alerta inteligente de ciclo de retorno, você perde o cliente de forma definitiva para o concorrente.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="pain-card">
+                        <div class="pain-icon-wrapper">
+                            <span class="emoji-icon">📅</span>
+                        </div>
+                        <h3 class="pain-card-title">Agenda com horários vagos</h3>
+                        <p class="pain-card-description">Buracos na agenda, recepção vazia e equipe ociosa. O tempo passa e a receita que deveria entrar vai embora por falta de reengajamento ativo.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="pain-card">
+                        <div class="pain-icon-wrapper">
+                            <span class="emoji-icon">💸</span>
+                        </div>
+                        <h3 class="pain-card-title">Falta de controle financeiro</h3>
+                        <p class="pain-card-description">Você trabalha 12 horas por dia, mas não sabe o lucro real do mês. A falta de relatórios e a perda de controle sobre custos impedem o crescimento planejado.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="pain-card">
+                        <div class="pain-icon-wrapper">
+                            <span class="emoji-icon">📱</span>
+                        </div>
+                        <h3 class="pain-card-title">Controle manual por WhatsApp</h3>
+                        <p class="pain-card-description">Sua secretária passa o dia enviando confirmações manuais. Erros acontecem, mensagens são esquecidas, e as faltas dos pacientes continuam acumulando.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="pain-card">
+                        <div class="pain-icon-wrapper">
+                            <span class="emoji-icon">🔍</span>
+                        </div>
+                        <h3 class="pain-card-title">Dificuldade para acompanhar resultados</h3>
+                        <p class="pain-card-description">Decisões tomadas na base do 'achômetro'. Você não sabe quais procedimentos são de fato mais lucrativos e nem quais canais de divulgação funcionam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transition Section -->
+        <section class="transition-section">
+            <div class="container text-center">
+                <h3 class="transition-title">E se sua clínica funcionasse como uma máquina de crescimento?</h3>
+                <p class="transition-text">Substitua o esforço operacional manual por automações focadas em trazer o paciente de volta, aumentar o ticket médio e blindar seu financeiro.</p>
+                <div class="scroll-indicator">
+                    <i data-lucide="chevron-down" class="bounce"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution / Funcionalidades Section -->
+        <section class="solution-section" id="solucoes">
+            <div class="container">
+                <!-- Seção 1: Agenda inteligente e lembretes -->
+                <div class="solution-item">
+                    <div class="solution-info">
+                        <span class="solution-tag">Agenda & WhatsApp</span>
+                        <h3 class="solution-item-title">Automatize confirmações e lembretes por WhatsApp</h3>
+                        <p class="solution-item-description">
+                            Reduza o índice de faltas em até 40% sem que sua equipe precise gastar horas ligando ou enviando mensagens manuais. A plataforma dispara lembretes interativos automáticos e atualiza o status instantaneamente.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Confirmações automáticas</strong> de presença em tempo real</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Lembretes 24h antes</strong> que eliminam os esquecimentos</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Remarcação fácil</strong> direto pelas respostas do paciente</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Visualização no celular</strong> para que você acompanhe tudo de qualquer lugar</span></li>
+                        </ul>
+                    </div>
+                    <div class="solution-visual">
+                        <!-- Interactive CSS Mockup: Weekly Calendar & Drag and Drop Simulation -->
+                        <div class="mockup-window">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <div class="mockup-title">Painel de Agendamento Inteligente</div>
+                            </div>
+                            <div class="mockup-body calendar-mockup">
+                                <div class="calendar-days">
+                                    <span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span>
+                                </div>
+                                <div class="calendar-grid">
+                                    <div class="calendar-hour">09:00</div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot">
+                                        <div class="appointment-card apt-purple" draggable="true" id="apt-1">
+                                            <span class="apt-time">09:00 - 10:00</span>
+                                            <span class="apt-name">Ana Silva</span>
+                                            <span class="apt-service">Limpeza de Pele</span>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot"></div>
+                                    
+                                    <div class="calendar-hour">10:00</div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot">
+                                        <div class="appointment-card apt-blue" draggable="true" id="apt-2">
+                                            <span class="apt-time">10:00 - 11:30</span>
+                                            <span class="apt-name">Carla M.</span>
+                                            <span class="apt-service">Microagulhamento</span>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot"></div>
+
+                                    <div class="calendar-hour">11:00</div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot"></div>
+                                    <div class="calendar-slot" id="drop-target-slot">
+                                        <div class="drop-zone-indicator">Remarcar para aqui</div>
+                                    </div>
+                                    <div class="calendar-slot"></div>
+                                </div>
+                                <div class="calendar-footer-hint">
+                                    <i data-lucide="hand-metal" class="icon-hint"></i> Simulação: arraste o agendamento de <strong>Carla M.</strong> para a Quinta-feira!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seção 2: Reter pacientes e inativos -->
+                <div class="solution-item alternate">
+                    <div class="solution-info">
+                        <span class="solution-tag">Retenção Ativa</span>
+                        <h3 class="solution-item-title">Identifique pacientes que deveriam ter retornado</h3>
+                        <p class="solution-item-description">
+                            Não deixe o ciclo dos procedimentos vencer. Nossa inteligência rastreia o tempo médio de retorno de cada tratamento (ex.: Botox a cada 4 ou 6 meses) e avisa quem está pendente para que você dispare um convite de retorno no momento certo.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Acompanhamento automático</strong> de ciclos de procedimentos</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Ficha inteligente de pacientes</strong> com histórico completo</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Registro de antes e depois</strong> para comprovar resultados</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Listagem de inativos</strong> filtrados por dias sem visita</span></li>
+                        </ul>
+                    </div>
+                    <div class="solution-visual">
+                        <!-- Interactive Before/After Image Slider Mockup -->
+                        <div class="mockup-window">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <div class="mockup-title">Ficha Clínica - Fotos Comparativas</div>
+                            </div>
+                            <div class="mockup-body patient-slider-mockup">
+                                <div class="patient-info-header">
+                                    <div class="patient-avatar">PC</div>
+                                    <div class="patient-meta">
+                                        <span class="p-name">Patricia Costa</span>
+                                        <span class="p-treatment">Procedimento: Peeling Químico (Retorno Devido)</span>
+                                    </div>
+                                </div>
+                                <div class="comparison-slider-container" id="slider-container">
+                                    <!-- Before Image Container -->
+                                    <div class="slider-image before-image" style="background-image: url('https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=600&auto=format&fit=crop');">
+                                        <div class="slider-label label-before">Antes</div>
+                                    </div>
+                                    <!-- After Image Container (revealed by sliding) -->
+                                    <div class="slider-image after-image" id="after-image" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600&auto=format&fit=crop'); width: 50%;">
+                                        <div class="slider-label label-after">Depois</div>
+                                    </div>
+                                    <!-- The Slider Handle -->
+                                    <div class="slider-handle" id="slider-handle">
+                                        <div class="handle-line"></div>
+                                        <div class="handle-button">
+                                            <i data-lucide="chevrons-left-right"></i>
+                                        </div>
+                                        <div class="handle-line"></div>
+                                    </div>
+                                </div>
+                                <div class="slider-hint">
+                                    <i data-lucide="move" class="icon-hint"></i> Arraste a barra para comparar o <strong>Antes & Depois</strong> do tratamento
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seção 3: Financeiro em tempo real -->
+                <div class="solution-item">
+                    <div class="solution-info">
+                        <span class="solution-tag">Faturamento & Controle</span>
+                        <h3 class="solution-item-title">Acompanhe seu faturamento em tempo real</h3>
+                        <p class="solution-item-description">
+                            Tenha clareza absoluta sobre as finanças do seu negócio. Visualize entradas, acompanhe custos fixos e saiba exatamente a margem de lucro líquido da sua clínica no dia, semana ou mês.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Painel intuitivo com KPIs</strong> essenciais atualizados na hora</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Fluxo de caixa consolidado</strong> sem dependência de planilhas</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Gráficos gerenciais</strong> simples e de fácil leitura</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Controle de formas de pagamento</strong> (dinheiro, PIX, cartão)</span></li>
+                        </ul>
+                    </div>
+                    <div class="solution-visual">
+                        <!-- Interactive CSS Mockup: Live Dashboard & Chart -->
+                        <div class="mockup-window">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <div class="mockup-title">Painel Financeiro Consolidado</div>
+                            </div>
+                            <div class="mockup-body finance-mockup">
+                                <div class="kpi-row">
+                                    <div class="kpi-card">
+                                        <span class="kpi-label">Faturamento Hoje</span>
+                                        <span class="kpi-value text-success" id="kpi-today">R$ 1.840,00</span>
+                                        <span class="kpi-trend"><i data-lucide="arrow-up-right"></i> +12% vs ontem</span>
+                                    </div>
+                                    <div class="kpi-card">
+                                        <span class="kpi-label">Faturamento Mês</span>
+                                        <span class="kpi-value" id="kpi-month">R$ 42.690,00</span>
+                                        <span class="kpi-trend"><i data-lucide="arrow-up-right"></i> +22% vs anterior</span>
+                                    </div>
+                                </div>
+                                <div class="chart-container">
+                                    <div class="chart-header">
+                                        <span class="chart-title">Receita Semanal</span>
+                                        <div class="chart-legend">
+                                            <span class="legend-dot current"></span><span>Desempenho</span>
+                                        </div>
+                                    </div>
+                                    <div class="svg-chart-wrapper">
+                                        <svg viewBox="0 0 400 150" class="svg-chart">
+                                            <line x1="0" y1="30" x2="400" y2="30" stroke="#f1f5f9" stroke-width="1" stroke-opacity="0.1" />
+                                            <line x1="0" y1="70" x2="400" y2="70" stroke="#f1f5f9" stroke-width="1" stroke-opacity="0.1" />
+                                            <line x1="0" y1="110" x2="400" y2="110" stroke="#f1f5f9" stroke-width="1" stroke-opacity="0.1" />
+                                            <defs>
+                                                <linearGradient id="chart-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                    <stop offset="0%" stop-color="rgba(99, 102, 241, 0.4)" />
+                                                    <stop offset="100%" stop-color="rgba(99, 102, 241, 0)" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path d="M 20 140 L 20 100 Q 80 70 140 85 T 260 40 T 380 30 L 380 140 Z" fill="url(#chart-grad)" />
+                                            <path d="M 20 100 Q 80 70 140 85 T 260 40 T 380 30" fill="none" stroke="#6366f1" stroke-width="3" stroke-linecap="round" />
+                                            <circle cx="260" cy="40" r="6" fill="#6366f1" stroke="#ffffff" stroke-width="2" />
+                                            <circle cx="380" cy="30" r="6" fill="#10b981" stroke="#ffffff" stroke-width="2" />
+                                        </svg>
+                                        <div class="chart-labels">
+                                            <span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seção 4: Procedimentos que geram mais lucro -->
+                <div class="solution-item alternate">
+                    <div class="solution-info">
+                        <span class="solution-tag">Rentabilidade</span>
+                        <h3 class="solution-item-title">Saiba exatamente quais procedimentos geram mais lucro</h3>
+                        <p class="solution-item-description">
+                            Não se engane com faturamento bruto. Descubra quais procedimentos cobrem seus custos, pagam as comissões e colocam a maior margem líquida no seu caixa de forma automatizada.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Custo dos materiais</strong> atrelado a cada procedimento</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Cálculo automático de comissão</strong> de profissionais</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Ranking de lucro real</strong> por serviço executado</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span><strong>Identificação de serviços</strong> gargalo que drenam sua receita</span></li>
+                        </ul>
+                    </div>
+                    <div class="solution-visual">
+                        <!-- NEW Interactive CSS Mockup: Procedure Profitability Ranking -->
+                        <div class="mockup-window">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <div class="mockup-title">Ranking de Lucratividade por Procedimento</div>
+                            </div>
+                            <div class="mockup-body profitability-mockup">
+                                <div class="proc-list">
+                                    <div class="proc-item active" data-proc="toxina">
+                                        <span class="proc-rank">#1</span>
+                                        <span class="proc-name">Toxina Botulínica</span>
+                                        <span class="proc-margin text-success">65% Lucro</span>
+                                    </div>
+                                    <div class="proc-item" data-proc="preenchimento">
+                                        <span class="proc-rank">#2</span>
+                                        <span class="proc-name">Preenchimento Labial</span>
+                                        <span class="proc-margin text-success">58% Lucro</span>
+                                    </div>
+                                    <div class="proc-item" data-proc="limpeza">
+                                        <span class="proc-rank">#3</span>
+                                        <span class="proc-name">Limpeza de Pele</span>
+                                        <span class="proc-margin text-accent">22% Lucro</span>
+                                    </div>
+                                </div>
+                                <div class="proc-details" id="proc-details-box">
+                                    <div class="proc-detail-header">
+                                        <strong id="pd-name">Toxina Botulínica</strong>
+                                        <span class="badge-success-sm" id="pd-status">Alta Margem</span>
+                                    </div>
+                                    <div class="proc-stats">
+                                        <div class="p-stat">
+                                            <span class="ps-label">Preço Cobrado</span>
+                                            <span class="ps-value" id="pd-price">R$ 1.200,00</span>
+                                        </div>
+                                        <div class="p-stat">
+                                            <span class="ps-label">Custos + Comissão</span>
+                                            <span class="ps-value" id="pd-cost">R$ 420,00</span>
+                                        </div>
+                                        <div class="p-stat">
+                                            <span class="ps-label">Margem Líquida</span>
+                                            <span class="ps-value text-success" id="pd-profit">R$ 780,00 (65%)</span>
+                                        </div>
+                                    </div>
+                                    <div class="proc-tip" id="pd-tip">
+                                        💡 <strong>Insight da IA:</strong> Foco de retorno rápido. Pacientes que realizam este serviço tendem a realizar um novo em até 120 dias.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de IA (Premium & Futurista) -->
+        <section class="ai-section" id="inteligencia-artificial">
+            <div class="container">
+                <div class="ai-section-wrapper">
+                    <div class="glow-ai"></div>
+                    <div class="ai-content">
+                        <span class="section-tagline tag-ai">Inteligência Artificial Premium</span>
+                        <h2 class="ai-title">Deixe a IA gerenciar o crescimento da sua clínica</h2>
+                        <p class="ai-subtitle">
+                            Transforme sua clínica em uma operação inteligente. Nossa inteligência artificial trabalha em segundo plano identificando oportunidades de faturamento e agindo para recuperar clientes no piloto automático.
+                        </p>
+                        
+                        <div class="ai-features-list">
+                            <div class="ai-feat-item">
+                                <div class="ai-feat-icon"><i data-lucide="eye-off"></i></div>
+                                <div>
+                                    <h4 class="ai-feat-title">IA identifica pacientes inativos</h4>
+                                    <p class="ai-feat-desc">Detecta de forma autônoma quem parou de agendar sessões recorrentes antes que você perca o contato.</p>
+                                </div>
+                            </div>
+                            <div class="ai-feat-item">
+                                <div class="ai-feat-icon"><i data-lucide="message-square"></i></div>
+                                <div>
+                                    <h4 class="ai-feat-title">IA sugere campanhas de retorno</h4>
+                                    <p class="ai-feat-desc">Monta mensagens e ofertas personalizadas no tom da sua marca para incentivar a volta imediata.</p>
+                                </div>
+                            </div>
+                            <div class="ai-feat-item">
+                                <div class="ai-feat-icon"><i data-lucide="trending-up"></i></div>
+                                <div>
+                                    <h4 class="ai-feat-title">IA prevê faturamento futuro</h4>
+                                    <p class="ai-feat-desc">Cruza agendamentos, histórico financeiro e sazonalidade para prever o fluxo de caixa dos próximos 30 dias.</p>
+                                </div>
+                            </div>
+                            <div class="ai-feat-item">
+                                <div class="ai-feat-icon"><i data-lucide="sparkles"></i></div>
+                                <div>
+                                    <h4 class="ai-feat-title">IA sugere oportunidades de venda</h4>
+                                    <p class="ai-feat-desc">Identifica pacotes e procedimentos complementares ideais para fazer cross-sell com alta chance de conversão.</p>
+                                </div>
+                            </div>
+                            <div class="ai-feat-item">
+                                <div class="ai-feat-icon"><i data-lucide="file-text"></i></div>
+                                <div>
+                                    <h4 class="ai-feat-title">IA gera relatórios automaticamente</h4>
+                                    <p class="ai-feat-desc">Prepara insights claros do desempenho geral e envia resumos de ações necessárias direto no seu WhatsApp.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ai-simulator-wrapper">
+                        <div class="mockup-window ai-mockup">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <div class="mockup-title">Painel de Insights Inteligente - Lumina IA</div>
+                            </div>
+                            <div class="mockup-body ai-simulator-body">
+                                <div class="ai-simulator-screen" id="ai-screen">
+                                    <div class="ai-sim-idle" id="ai-idle-state">
+                                        <div class="ai-pulsing-brain">
+                                            <i data-lucide="brain-circuit" class="brain-icon"></i>
+                                        </div>
+                                        <p>Clique abaixo para simular o diagnóstico de IA da sua clínica</p>
+                                        <button class="btn btn-primary" id="btn-run-ai">Analisar Clínica com IA</button>
+                                    </div>
+                                    
+                                    <div class="ai-sim-active" id="ai-active-state" style="display: none;">
+                                        <div class="sim-terminal" id="sim-terminal-output">
+                                            <!-- Steps will be injected here by JS -->
+                                        </div>
+                                        <div class="sim-progress-bar-container" id="sim-progress-box" style="display: none;">
+                                            <div class="sim-progress-bar" id="sim-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios (Focada em Resultados) -->
+        <section class="features-grid-section" id="beneficios">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline tag-accent">Resultados Previsíveis</span>
+                    <h2 class="section-title">O que sua clínica ganha de verdade?</h2>
+                    <p class="section-subtitle">Sem foco em botões ou ferramentas técnicas. Veja os resultados de negócios que o Lumina gera para sua operação:</p>
+                </div>
+                
+                <div class="features-6-grid">
+                    <!-- Item 1 -->
+                    <div class="grid-feature-card">
+                        <div class="gf-icon-wrapper success">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h4 class="gf-title">Mais pacientes retornando</h4>
+                        <p class="gf-description">Criação de um ciclo de visitas constante. Clientes que antes faziam apenas um procedimento passam a voltar regularmente.</p>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="grid-feature-card">
+                        <div class="gf-icon-wrapper success">
+                            <i data-lucide="check-square"></i>
+                        </div>
+                        <h4 class="gf-title">Menos faltas na agenda</h4>
+                        <p class="gf-description">Agenda blindada contra cancelamentos repentinos. Confirmações por WhatsApp reduzem o absenteísmo em até 40%.</p>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="grid-feature-card">
+                        <div class="gf-icon-wrapper success">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h4 class="gf-title">Mais vendas e ticket alto</h4>
+                        <p class="gf-description">Identificação inteligente de pacientes prontos para novos tratamentos, impulsionando a venda de pacotes de maior valor.</p>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="grid-feature-card">
+                        <div class="gf-icon-wrapper success">
+                            <i data-lucide="pie-chart"></i>
+                        </div>
+                        <h4 class="gf-title">Financeiro simplificado</h4>
+                        <p class="gf-description">Nada de planilhas complexas. Acompanhe entradas, despesas, faturamento e lucro líquido de forma totalmente visual.</p>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="grid-feature-card">
+                        <div class="gf-icon-wrapper success">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <h4 class="gf-title">Economia real de tempo</h4>
+                        <p class="gf-description">Sua recepção livre das tarefas burocráticas repetitivas para focar em atender e acolher os pacientes com qualidade.</p>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="grid-feature-card">
+                        <div class="gf-icon-wrapper success">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h4 class="gf-title">Crescimento previsível</h4>
+                        <p class="gf-description">Tome decisões baseadas em relatórios reais. Saiba exatamente qual será seu faturamento para expandir com segurança.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section (Casos Reais) -->
+        <section class="testimonials-section" id="depoimentos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline tag-accent">Prova Social de Sucesso</span>
+                    <h2 class="section-title">Resultados de quem usa a plataforma</h2>
+                    <p class="section-subtitle">Veja como proprietárias de clínicas de estética transformaram o controle financeiro e a retenção de seus pacientes.</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <!-- Card 1 -->
+                    <div class="testimonial-card">
+                        <div class="t-rating">⭐⭐⭐⭐• 4.9/5</div>
+                        <p class="t-quote">
+                            "Antes, os pacientes sumiam após o Botox e eu nem percebia. A IA do Lumina me alerta automaticamente quem precisa voltar. Em 15 dias, recuperei 73 clientes inativos que estavam esquecidos no cadastro."
+                        </p>
+                        <div class="t-metric text-success">
+                            <i data-lucide="arrow-up-right"></i> +30% de faturamento em 30 dias
+                        </div>
+                        <div class="t-user">
+                            <div class="t-avatar t-avatar-1">AS</div>
+                            <div class="t-meta">
+                                <span class="t-name">Ana Silva</span>
+                                <span class="t-clinic">Bella Estética</span>
+                                <span class="t-city">São Paulo, SP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="testimonial-card">
+                        <div class="t-rating">⭐⭐⭐⭐⭐ 5.0/5</div>
+                        <p class="t-quote">
+                            "O disparo de confirmações via WhatsApp reduziu nossas faltas drasticamente. Minha secretária antes passava horas enviando mensagens manuais, e agora o sistema faz isso tudo sozinho e sem erros."
+                        </p>
+                        <div class="t-metric text-success">
+                            <i data-lucide="arrow-down-right" class="trend-down"></i> 35% de redução em não-comparecimentos
+                        </div>
+                        <div class="t-user">
+                            <div class="t-avatar t-avatar-2">CM</div>
+                            <div class="t-meta">
+                                <span class="t-name">Carla Mendes</span>
+                                <span class="t-clinic">Studio Beauty</span>
+                                <span class="t-city">Osasco, SP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="testimonial-card">
+                        <div class="t-rating">⭐⭐⭐⭐⭐ 5.0/5</div>
+                        <p class="t-quote">
+                            "Esqueço de planilhas. Consigo ver o faturamento exato e a margem de lucro de cada profissional direto no celular. Pela primeira vez tenho clareza da saúde financeira e previsibilidade do negócio."
+                        </p>
+                        <div class="t-metric text-success">
+                            <i data-lucide="arrow-up-right"></i> Previsibilidade financeira em tempo real
+                        </div>
+                        <div class="t-user">
+                            <div class="t-avatar t-avatar-3">PC</div>
+                            <div class="t-meta">
+                                <span class="t-name">Dra. Patricia Costa</span>
+                                <span class="t-clinic">Derma Center</span>
+                                <span class="t-city">Campinas, SP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Antes vs Depois Comparison Section -->
+        <section class="comparison-section" id="comparacao">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline tag-accent">A Transformação Operacional</span>
+                    <h2 class="section-title">O que muda na rotina da sua clínica?</h2>
+                    <p class="section-subtitle">Veja a diferença prática e de faturamento no dia a dia da clínica após implementar a inteligência do Lumina.</p>
+                </div>
+                
+                <div class="comparison-grid-wrapper">
+                    <!-- ANTES Card -->
+                    <div class="comp-card card-before">
+                        <div class="comp-card-header">
+                            <h3>ANTES <span class="comp-sub">(Operação Manual)</span></h3>
+                            <div class="comp-time">Gerenciamento caótico e lento</div>
+                        </div>
+                        <ul class="comp-list">
+                            <li><i data-lucide="x-circle" class="icon-danger"></i> <span>Até 40% de buracos na agenda por faltas não confirmadas</span></li>
+                            <li><i data-lucide="x-circle" class="icon-danger"></i> <span>Pacientes inativos esquecidos no banco de dados</span></li>
+                            <li><i data-lucide="x-circle" class="icon-danger"></i> <span>Você não sabe o lucro líquido exato no final do mês</span></li>
+                            <li><i data-lucide="x-circle" class="icon-danger"></i> <span>Secretária sobrecarregada com WhatsApp manual</span></li>
+                            <li><i data-lucide="x-circle" class="icon-danger"></i> <span>Foco excessivo em tarefas operacionais burocráticas</span></li>
+                            <li><i data-lucide="x-circle" class="icon-danger"></i> <span>Receita e vendas estagnadas sem previsibilidade</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Separation / Transition Arrow -->
+                    <div class="comp-arrow-divider">
+                        <div class="arrow-circle">
+                            <i data-lucide="arrow-right" class="arrow-desktop"></i>
+                            <i data-lucide="arrow-down" class="arrow-mobile"></i>
+                        </div>
+                    </div>
+
+                    <!-- DEPOIS Card -->
+                    <div class="comp-card card-after">
+                        <div class="comp-card-header">
+                            <h3>DEPOIS <span class="comp-sub">(Lumina com IA)</span></h3>
+                            <div class="comp-time">Previsibilidade, lucro e crescimento</div>
+                        </div>
+                        <ul class="comp-list">
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span>Agenda blindada com lembretes automáticos integrados</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span>IA disparando alertas para resgatar pacientes sumidos</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span>Controle financeiro instantâneo e lucro visível na tela</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span>Automação fazendo o trabalho repetitivo da recepção</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span>Tempo livre para focar em novas técnicas e atendimento premium</span></li>
+                            <li><i data-lucide="check-circle-2" class="icon-success"></i> <span>Previsibilidade de faturamento para expansão segura</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing / Planos Section -->
+        <section class="pricing-section" id="precos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline tag-accent">Preços Transparentes</span>
+                    <h2 class="section-title">Escolha o plano para acelerar sua clínica</h2>
+                    <p class="section-subtitle">Comece hoje mesmo com 30 dias de teste grátis. Cancele quando quiser, sem fidelidade.</p>
+                    
+                    <!-- Billing Cycle Selector -->
+                    <div class="billing-toggle-container">
+                        <span class="billing-label text-active" id="label-monthly">Mensal</span>
+                        <button class="billing-toggle-btn" id="billingToggle" aria-label="Alterar ciclo de cobrança">
+                            <span class="toggle-circle"></span>
+                        </button>
+                        <span class="billing-label" id="label-yearly">Anual <span class="discount-badge">Economize 20%</span></span>
+                    </div>
+                </div>
+                
+                <div class="pricing-grid">
+                    <!-- PLANO ESSENCIAL -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Essencial</h3>
+                            <p class="plan-desc">Ideal para profissionais autônomos</p>
+                            <div class="plan-price-wrapper">
+                                <span class="currency">R$</span>
+                                <span class="price" id="price-light" data-monthly="69" data-yearly="55">69</span>
+                                <span class="period" id="period-light">/mês</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="plan-features">
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Agenda online completa</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Confirmações automáticas simples</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Controle de faturamento básico</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Ficha clínica e cadastro de pacientes</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Suporte humano por WhatsApp</span></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#hero" class="btn btn-outline btn-full">Começar teste grátis</a>
+                        </div>
+                    </div>
+
+                    <!-- PLANO GROWTH -->
+                    <div class="pricing-card popular">
+                        <div class="popular-tag">🔥 RECOMENDADO E MAIS POPULAR</div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Growth</h3>
+                            <p class="plan-desc">Perfeito para clínicas em crescimento</p>
+                            <div class="plan-price-wrapper">
+                                <span class="currency">R$</span>
+                                <span class="price" id="price-pro" data-monthly="149" data-yearly="119">149</span>
+                                <span class="period" id="period-pro">/mês</span>
+                            </div>
+                            <span class="yearly-saving-label" id="saving-pro">Economize R$ 360 no plano anual</span>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="plan-features">
+                                <li><i data-lucide="check" class="icon-success"></i> <span><strong>Tudo do Essencial +</strong></span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span><strong>Disparos e lembretes ilimitados</strong></span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Identificação de inativos e retornos</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Painel financeiro em tempo real</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Módulo de Margem e Custos de materiais</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Suporte prioritário via chat e WhatsApp</span></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#hero" class="btn btn-primary btn-full">Começar teste grátis</a>
+                        </div>
+                    </div>
+
+                    <!-- PLANO ELITE -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Elite</h3>
+                            <p class="plan-desc">Para clínicas que buscam automação com IA</p>
+                            <div class="plan-price-wrapper">
+                                <span class="currency">R$</span>
+                                <span class="price" id="price-premium" data-monthly="299" data-yearly="239">299</span>
+                                <span class="period" id="period-premium">/mês</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="plan-features">
+                                <li><i data-lucide="check" class="icon-success"></i> <span><strong>Tudo do Growth +</strong></span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span><strong>Módulo completo de IA (Lumina IA)</strong></span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Previsão de faturamento inteligente</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Mensagens de retorno geradas por IA</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Multicontas / Acesso para Equipes</span></li>
+                                <li><i data-lucide="check" class="icon-success"></i> <span>Consultor de implantação dedicado</span></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#hero" class="btn btn-outline btn-full">Começar teste grátis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de FAQ (Perguntas Frequentes) -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline tag-accent">Dúvidas Frequentes</span>
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <p class="section-subtitle">Esclareça suas principais dúvidas sobre o Lumina e veja como é simples iniciar.</p>
+                </div>
+                
+                <div class="faq-accordion-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Preciso instalar algo?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não. O Lumina é uma plataforma 100% online que funciona na nuvem. Você pode acessar de qualquer computador, tablet ou celular, necessitando apenas de uma conexão com a internet, sem instalar nenhum programa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Funciona pelo celular?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! O Lumina é totalmente responsivo e otimizado para celulares. Você e sua equipe podem fazer agendamentos, acompanhar o financeiro e gerenciar os retornos diretamente da tela do celular com total comodidade.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Posso cancelar quando quiser?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, o cancelamento é totalmente livre. Não temos fidelidade de contrato nem multas por cancelamento. Você pode solicitar a interrupção da sua assinatura quando preferir diretamente pelas configurações.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Existe suporte?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, nosso suporte é feito por pessoas reais via WhatsApp. Te auxiliamos em toda a jornada: desde a configuração inicial e importação de dados da sua antiga agenda até as dúvidas corriqueiras do dia a dia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como funciona o teste grátis?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você tem 30 dias de acesso gratuito completo para testar e validar o Lumina na sua clínica. Não é necessário cadastrar cartão de crédito para iniciar o teste, e você só decide assinar se o sistema de fato gerar resultado no seu dia a dia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Meus dados ficam seguros?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Seus dados estão totalmente protegidos. Utilizamos servidores de alta segurança e criptografia de dados de ponta (SSL). Todos os prontuários e informações de faturamento são armazenados de forma sigilosa e segura, em plena conformidade com a LGPD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="container text-center">
+                <h2>Transforme sua clínica em uma operação inteligente com ajuda da IA.</h2>
+                <p>Experimente o Lumina gratuitamente por 30 dias. Recupere pacientes inativos e melhore o faturamento da sua agenda em minutos.</p>
+                <div class="cta-group">
+                    <a href="#precos" class="btn btn-primary btn-lg">Começar teste grátis agora</a>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-secondary btn-lg btn-whatsapp">
+                        <i data-lucide="message-circle"></i> Falar com consultor via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">✨</span>
+                        <span class="logo-text">Lumina</span>
+                    </a>
+                    <p class="footer-desc">
+                        A plataforma de crescimento definitiva para clínicas de estética focada em faturamento, redução de faltas e retenção automática de pacientes.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h5 class="footer-title">Soluções</h5>
+                    <ul class="footer-links">
+                        <li><a href="#solucoes">Agenda & Lembretes</a></li>
+                        <li><a href="#solucoes">Retenção de Pacientes</a></li>
+                        <li><a href="#solucoes">Painel de Faturamento</a></li>
+                        <li><a href="#solucoes">Procedimentos Lucrativos</a></li>
+                        <li><a href="#inteligencia-artificial">Inteligência Artificial</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h5 class="footer-title">Plataforma</h5>
+                    <ul class="footer-links">
+                        <li><a href="#precos">Planos e Preços</a></li>
+                        <li><a href="#beneficios">Resultados Reais</a></li>
+                        <li><a href="#problemas">Desafios de Gestão</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Políticas de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col contact-col">
+                    <h5 class="footer-title">Suporte e Contato</h5>
+                    <ul class="footer-links">
+                        <li><span class="contact-item"><i data-lucide="mail"></i> contato@lumina.com.br</span></li>
+                        <li><span class="contact-item"><i data-lucide="phone"></i> (11) 4003-8921</span></li>
+                        <li><span class="contact-item"><i data-lucide="map-pin"></i> Av. Paulista, 1000 - São Paulo, SP</span></li>
+                        <li><span class="contact-item badge-lgpd"><i data-lucide="lock"></i> 100% em Conformidade LGPD</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Gestão de Clínicas Ltda. Todos os direitos reservados. CNPJ: 12.345.678/0001-90.</p>
+                <p>Criado com foco em impulsionar o faturamento e sucesso das clínicas estéticas brasileiras.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
